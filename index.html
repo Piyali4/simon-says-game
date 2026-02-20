@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon says Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-wrapper">
+    <h1>Simon says Game</h1>
+    <h2 id="status-text">Press any key to start the game</h2>
+
+    <section class="game-controls" aria-label="Game controls">
+      <label class="strict-control" for="strict-toggle">
+        <input id="strict-toggle" type="checkbox">
+        Strict mode
+      </label>
+      <p class="score-text">High Score: <span id="high-score">0</span></p>
+    </section>
+
+    <section class="btn-container" aria-label="Simon game buttons">
+      <button class="btn red" id="red" type="button" aria-label="Red button"></button>
+      <button class="btn green" id="green" type="button" aria-label="Green button"></button>
+      <button class="btn yellow" id="yellow" type="button" aria-label="Yellow button"></button>
+      <button class="btn purple" id="purple" type="button" aria-label="Purple button"></button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
